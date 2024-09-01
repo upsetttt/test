@@ -1,0 +1,159 @@
+* { box-sizing: border-box;
+}
+.html{
+  font-size: 62.5%;
+}
+
+.body {
+  font-size: 1.4rem;
+  font-family: "poppins", sans-serif;
+  font-size: 16px;
+
+}
+/*===========================Chung====================================================*/
+a{
+text-decoration: none;
+}
+.main-content{
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f7cd59;
+}
+
+/*=====================================Header=========================================*/ 
+header.fixed {
+  background-color: #f7cd59;
+  position: sticky;
+  top: -28px;
+}
+header .main-content {
+  padding-top: 36px;
+  padding-bottom: 8px;
+}
+header .body{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+header .nav{
+  display: flex;
+  margin-left: auto;
+}
+header .nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .nav ul li a{
+  position: relative;
+  padding: 8px 21px;
+  font-size: 1.4rem;
+  color: #4e4e4d;
+}
+header .nav ul li a:hover{
+  color: rgb(0,0,0);
+ font-size: 1.6rem;
+ text-shadow: #0000 0px 0px 0px;
+ font-weight: 500; 
+}
+header .nav ul li .active a{
+  color: #171100;
+  font-weight: 600;
+} 
+header .nav ul li.active a::after{
+  left: 21px;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 12px;
+  height: 2px;
+  background: #171100;
+  border-radius: 1px;
+}
+.btn{
+  min-width: 120px;
+  margin-left: 49px;
+  padding: 0 16px;
+  background-color: #171100;
+  border-radius: 999px;
+  color: #fff;
+  display: inline - block;
+  line-height: 44px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    max-width: calc(100% - 32px);
+  }
+
+  header .nav ul li a {
+    padding: 6px 16px;
+  }
+
+  .btn {
+    min-width: 100px;
+    margin-left: 24px;
+    line-height: 40px;
+  }
+}
+/*==========================================================hero===========================================================*/
+main.hero{
+ background-color:   #f7cd59 ;
+}
+main .hero .body{
+  padding-top: 56px;
+  display: flex;
+}
+.hero .media-block{
+  position: relative;
+  width: 48%;
+}
+.hero .content-block{
+  width: 52%;
+}
+.hero .media-block .hero-summary{
+  width: 270px;
+  position: absolute;
+  right: 0;
+  bottom: 46px;
+  background-color:#fff;
+border-radius:12px;
+box-shadow:#0000000d 0px 16px 32px 0px;
+line-height:16px;
+padding: 24px;
+
+}
+.hero .media-block .hero-summary .item{
+  align-items:center;
+  display: flex;
+  line-height:16px;
+
+}
+.hero-summary .item .icon{
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  background-color: #fff9e8;
+  border-radius: 50%;
+  align-items: center;
+  margin-right: 16px;
+}
+.hero-summary .item + .item{
+  margin-top: 22px;
+}
+.hero-summary .label{
+  color: #5f5b53;
+ font-size: 14px;
+ line-height: 1.86;
+}
+.hero-summary .title{
+  font-weight: 600;
+  font-size: 1.8 rem;
+  line-height: 1.67;
+}
